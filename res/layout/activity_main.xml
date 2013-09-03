@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnCerca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textCerca"
+        android:clickable="false"
+        android:text="@string/main_btn_cerca" android:onClick="avviaRicerca"/>
+
+    <EditText
+        android:id="@+id/textCerca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCerca"
+        android:layout_alignBottom="@+id/btnCerca"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="@string/main_txt_cerca_hint"
+        android:editable="false"
+        android:inputType="text" />
+
+    <ListView
+        android:id="@+id/listViewRecensioni"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:layout_alignLeft="@+id/textCerca"
+        android:layout_below="@+id/btnCerca">
+    </ListView>
+
+</RelativeLayout>
