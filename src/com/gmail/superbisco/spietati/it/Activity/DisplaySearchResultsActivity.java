@@ -1,4 +1,4 @@
-package com.gmail.superbisco.spietati.it;
+package com.gmail.superbisco.spietati.it.Activity;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class DisplayResultsActivity extends Activity {
+public class DisplaySearchResultsActivity extends Activity {
 
     @SuppressLint("NewApi")
     @Override

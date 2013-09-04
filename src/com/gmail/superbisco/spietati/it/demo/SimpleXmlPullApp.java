@@ -1,4 +1,4 @@
-package utils;
+package com.gmail.superbisco.spietati.it.demo;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

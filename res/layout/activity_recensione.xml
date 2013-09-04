@@ -8,8 +8,10 @@
             android:id="@+id/webView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginTop="58dp"/>
+    <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="54dp"
+            android:id="@+id/listViewScheda" android:layout_alignLeft="@+id/webView" android:layout_alignParentTop="true"/>
 
 </RelativeLayout>

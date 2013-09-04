@@ -1,11 +1,11 @@
-package bean;
+package com.gmail.superbisco.spietati.it.bean;
 
-public class Recensione {
+public class ElencoFilmItem {
 
     private String nome;
     private String idFilm;
 
-    public Recensione(String nome, String idFilm) {
+    public ElencoFilmItem(String nome, String idFilm) {
         this.nome = nome;
         this.idFilm = idFilm;
     }

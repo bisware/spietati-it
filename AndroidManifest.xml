@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.gmail.superbisco.spietati.it.MainActivity"
+            android:name=".Activity.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,7 +27,7 @@
         </activity>
 
         <activity
-            android:name="com.gmail.superbisco.spietati.it.DisplayResultsActivity"
+            android:name=".Activity.DisplaySearchResultsActivity"
             android:label="@string/title_activity_results"
             android:parentActivityName="com.gmail.superbisco.spietati.it.MainActivity" >
             <meta-data
@@ -36,7 +36,7 @@
         </activity>
 
         <activity
-                android:name="com.gmail.superbisco.spietati.it.DisplayRecensioneActivity"
+                android:name=".Activity.DisplayRecensioneActivity"
                 android:label="@string/title_activity_recensione"
                 android:parentActivityName="com.gmail.superbisco.spietati.it.MainActivity" >
             <meta-data

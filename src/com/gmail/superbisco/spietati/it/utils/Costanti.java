@@ -1,4 +1,4 @@
-package utils;
+package com.gmail.superbisco.spietati.it.utils;
 
 public class Costanti {
 
@@ -8,10 +8,10 @@ public class Costanti {
     // pagina delle recensioni da accodare al base idFilm
     public final static String URL_RECENSIONI = "z_recensioni.asp";
 
-    // pagina della singola recensione, con dettagli (la più usata)
+    // pagina della singola activity_recensione, con dettagli (la più usata)
     public final static String URL_SCHEDA_DETT = "z_scheda_dett_film.asp?idFilm=";
 
-    // pagina della singola recensione, con dettagli (la più usata)
+    // pagina della singola activity_recensione, con dettagli (la più usata)
     public final static String URL_SCHEDA = "z_scheda_film.asp?idFilm=";
 
     // pagina degli speciali
