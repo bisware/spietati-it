@@ -5,38 +5,39 @@
                 android:padding="6dip" >
 
     <ImageView
+            android:contentDescription="TODO"
             android:id="@+id/iconElenco"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_alignParentBottom="true"
             android:layout_alignParentTop="true"
             android:layout_marginRight="6dip"
-            android:contentDescription="TODO"
             android:src="@drawable/ic_launcher" />
 
     <TextView
-            android:id="@+id/altreInfo"
-            android:layout_width="fill_parent"
-            android:layout_height="26dip"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_toRightOf="@+id/iconElenco"
-            android:ellipsize="marquee"
-            android:singleLine="true"
-            android:text="Description"
-            android:textSize="12sp" />
-
-    <TextView
+            android:text="Titolo del film"
             android:id="@+id/titoloFilm"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/altreInfo"
+            android:layout_toRightOf="@+id/iconElenco"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
             android:layout_alignWithParentIfMissing="true"
-            android:layout_toRightOf="@+id/iconElenco"
             android:gravity="center_vertical"
-            android:text="Example application"
             android:textSize="16sp"/>
+
+    <TextView
+            android:text="Altre informazioni"
+            android:id="@+id/altreInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="26dip"
+            android:layout_toRightOf="@+id/iconElenco"
+            android:layout_below="@+id/titoloFilm"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="12sp" />
+
 
 </RelativeLayout>

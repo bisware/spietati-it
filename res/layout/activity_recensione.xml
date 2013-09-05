@@ -4,14 +4,15 @@
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
-    <WebView
-            android:id="@+id/webView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginTop="58dp"/>
+    <!--<WebView-->
+            <!--android:id="@+id/webView"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_marginTop="58dp"/>-->
     <ListView
-            android:layout_width="wrap_content"
-            android:layout_height="54dp"
-            android:id="@+id/listViewScheda" android:layout_alignLeft="@+id/webView" android:layout_alignParentTop="true"/>
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listViewScheda" android:layout_alignParentTop="true"/>
+
 
 </RelativeLayout>

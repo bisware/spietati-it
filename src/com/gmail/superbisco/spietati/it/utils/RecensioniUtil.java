@@ -50,10 +50,12 @@ public class RecensioniUtil {
             //System.setProperty("http.proxyHost", "proxy-centro.risorse.enel");
             //System.setProperty("http.proxyPort", "8080");
 
-            Document doc = Jsoup.connect(Costanti.URL_BASE_SPIETATI + Costanti.URL_SCHEDA_DETT + idFilm).get();
+            String urlScheda = Costanti.URL_BASE_SPIETATI + Costanti.URL_SCHEDA_DETT + idFilm[0];
+            Document doc = Jsoup.connect(urlScheda).get();
 
             String urlLocandina = doc.select("div#schedaFilm img").attr("src");
-            String titolo = doc.select(".titoloRecensione").text();
+            String titolo = doc.select("#mainContent h4").text();
+            //String titolo = doc.select(".titoloRecensione").text();
             String regista = doc.select(".regista").text();
             String receAutore = doc.select("nomeVoto").text();
             String receVoto = doc.select("voto").text();
@@ -80,6 +82,7 @@ public class RecensioniUtil {
             }
             recensioni.setTesto(testo);
 
+            recensioniList.add(recensioni);
 
             film.setRecensioni(recensioniList);
 
@@ -88,8 +91,6 @@ public class RecensioniUtil {
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
-
 
         return films;
     }

@@ -1,37 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="?android:attr/listPreferredItemHeight"
+                android:padding="6dip" >
 
     <ImageView
             android:contentDescription="Locandina film"
+            android:id="@+id/imgLocandina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/imgLocandina" android:layout_gravity="left|center_vertical"/>
+            android:layout_marginRight="6dip"
+            android:src="@drawable/ic_launcher" android:layout_alignParentTop="true"/>
 
     <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:text="Titolo"
-            android:id="@+id/textTitolo" android:layout_gravity="center"/>
-    <TextView
+            android:id="@+id/textTitolo"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
+            android:textSize="16sp" android:layout_alignParentStart="false" android:layout_toEndOf="@id/imgLocandina"/>
+
+    <TextView
             android:text="Regista"
             android:id="@+id/textRegista"
-            android:layout_gravity="center" />
-    <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recensione"
-            android:id="@+id/textRecensione" android:layout_gravity="center"/>
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textSize="12sp"
+            android:layout_toRightOf="@+id/imgLocandina" android:layout_below="@+id/textTitolo"/>
+
     <TextView
+            android:text="Recensione"
+            android:id="@+id/textRecensione"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/imgLocandina"
+            android:textSize="14sp" />
+
+    <TextView
             android:text="Autore recensione"
             android:id="@+id/textRecensioneAutore"
-            android:layout_gravity="center" />
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textRecensione"
+            android:singleLine="true"
+            android:textSize="16sp"/>
 
-</LinearLayout>
+</RelativeLayout>
