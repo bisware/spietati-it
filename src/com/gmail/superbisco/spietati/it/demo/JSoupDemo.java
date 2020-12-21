@@ -18,9 +18,6 @@ public class JSoupDemo {
 
     private static void testSchedaFilm() {
         try {
-            System.setProperty("http.proxyHost", "proxy-centro.risorse.enel");
-            System.setProperty("http.proxyPort", "8080");
-
             Document doc = Jsoup.connect(Costanti.URL_BASE_SPIETATI + Costanti.URL_SCHEDA_DETT + "4830").get();
 
             String urlLocandina = doc.select("div#schedaFilm img").attr("src");
@@ -46,9 +43,6 @@ public class JSoupDemo {
     private static void testConnection() {
 
         try {
-            System.setProperty("http.proxyHost", "proxy-centro.risorse.enel");
-            System.setProperty("http.proxyPort", "8080");
-
             Document doc = Jsoup.connect(Costanti.URL_BASE_SPIETATI + Costanti.URL_RECENSIONI).timeout(0).get();
 
             Elements links = doc.select(".tableRecensioni a");

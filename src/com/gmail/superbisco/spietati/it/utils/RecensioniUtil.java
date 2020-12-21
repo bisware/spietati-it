@@ -19,10 +19,6 @@ public class RecensioniUtil {
         listRece.add(new ElencoFilmItem("THE CANYONS", "4830"));
 
         try {
-
-            //System.setProperty("http.proxyHost", "proxy-centro.risorse.enel");
-            //System.setProperty("http.proxyPort", "8080");
-
             Document doc = Jsoup.connect(Costanti.URL_BASE_SPIETATI + Costanti.URL_RECENSIONI).get();
 
             Elements links = doc.select(".tableRecensioni a");
@@ -47,9 +43,6 @@ public class RecensioniUtil {
         List<SchedaFilm> films = new LinkedList<SchedaFilm>();
 
         try {
-            //System.setProperty("http.proxyHost", "proxy-centro.risorse.enel");
-            //System.setProperty("http.proxyPort", "8080");
-
             String urlScheda = Costanti.URL_BASE_SPIETATI + Costanti.URL_SCHEDA_DETT + idFilm[0];
             Document doc = Jsoup.connect(urlScheda).get();
 
